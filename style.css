@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(15, 23, 41, 1);
+}
+.navbar{
+    padding: 4px 30px;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: crimson; */
+    
+}
+.logo{
+    color: white;
+}
+ul{
+    display: flex;
+    padding: 10px 0;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+.banner{
+    /* background-color: aqua; */
+    height: 100vh;
+    /* padding: 20px; */
+}
+.banner-img{
+    display: block;
+    margin:auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+.descriptions p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.social-links{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    margin-right: 25px;
+    font-size: 30px;
+}
+.hire{
+  margin: 10px 0;
+  text-align: center;
+  color: white;
+  border: none;
+    
+}
+.hire-me{
+  font-size: 30px;
+  padding: 5px 18px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+.about{
+  margin: 30px;
+}
+.about h2{
+  margin-bottom: 30px;
+}
+/* .my-skills{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+} */
+.my-skills{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+/* skills  */
+.skill-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background-color: #b0acac;
+  padding: 5px 15px;
+  margin: 15px;
+}
+.skill-card i{
+  background-color: #b0acac;
+
+}
+.skill-card h3{
+  margin-left: 20px;
+  background-color: #b0acac;
+  
+}
+
+/* services */
+.service{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.left-side{
+    /* border: 2px solid red; */
+    color: white;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.left-side img{
+  width: 400px;
+
+}
+.right-side{
+    /* border: 2px solid red; */
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.abc{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  /* line-height: inherit; */
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff; 
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+
+.project{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+}
+.card {
+    /* width: 300px; */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid red;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-content {
+    padding: 16px;
+    color: white;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  .card p {
+    color: #666;
+  }
+
+
+  /* contact */
+
+  .contact {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .form-group button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
