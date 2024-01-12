@@ -31,9 +31,9 @@ ul li a{
     color: white;
 }
 .banner{
-    /* background-color: aqua; */
+    
     height: 100vh;
-    /* padding: 20px; */
+    /* padding: 30px; */
 }
 .banner-img{
     display: block;
@@ -46,6 +46,7 @@ ul li a{
 h2{
     text-align: center;
     color: white;
+    margin: 20px 0;
 }
 .descriptions p{
     width: 70%;
@@ -80,6 +81,7 @@ h2{
 }
 .about{
   margin: 30px;
+  padding: 0 30px;
 }
 .about h2{
   margin-bottom: 30px;
@@ -91,12 +93,21 @@ h2{
   width: 90%;
   margin: auto;
 } */
+
+.skills{
+  margin: 20px;
+  padding: 0 30px;
+}
+.frontend{
+  display: flex;
+  flex-direction: column;
+}
 .my-skills{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 50px;
+  /* padding: 0 50px; */
 }
 
 /* skills  */
@@ -120,6 +131,12 @@ h2{
 }
 
 /* services */
+
+.services{
+    margin: 20px;
+    padding: 0 30px;
+}
+
 .service{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -158,12 +175,16 @@ h2{
   margin-right: 5px;
 }
 
+.projects{
+  margin: 20px;
+  padding: 20px;
+}
 
 .project{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px;
+    
 
 }
 .card {
@@ -239,4 +260,34 @@ h2{
   .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  }
+.contact-para{
+  text-align: center;
+  color: white;
+}
+  .contact-information{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+  }
+  .contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+    background-color: #666;
+  }
+  .contact-icon{
+    margin-right: 40px;
+    background-color: #666;
+    font-size: 40px;
+
+  }
+  .contact-info {
+    background-color: #666;
+
   }
