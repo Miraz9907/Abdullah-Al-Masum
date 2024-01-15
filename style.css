@@ -12,28 +12,45 @@
     top: 0;
     align-items: center;
     justify-content: space-between;
-    /* background-color: crimson; */
     
 }
 .logo{
     color: white;
 }
-ul{
-    display: flex;
-    padding: 10px 0;
+.nav-items ul{
+  display: flex;
+  gap: 25px;
 }
-ul li{
-    list-style-type: none;
+.nav-items ul li{
+  list-style-type: none;
 }
-ul li a{
-    text-decoration: none;
-    margin-right: 20px;
-    color: white;
+.nav-items ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
 }
+.nav-right{
+  display: flex;
+  gap: 20px;
+}
+.nav-right button{
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav-right .icon{
+  display: none;
+  font-weight: 700;
+  color: white;
+}
+
 .banner{
     
     height: 100vh;
-    /* padding: 30px; */
+    padding: 30px;
 }
 .banner-img{
     display: block;
@@ -116,7 +133,7 @@ h2{
   flex-direction: row;
   align-items: center;
   color: white;
-  background-color: #b0acac;
+  background-color: #ccb5b5;
   padding: 5px 15px;
   margin: 15px;
 }
@@ -141,6 +158,8 @@ h2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
 }
 .left-side{
     /* border: 2px solid red; */
@@ -184,6 +203,9 @@ h2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
     
 
 }
@@ -220,7 +242,7 @@ h2{
   .contact {
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   }
 
   .form-group {
@@ -289,5 +311,31 @@ h2{
   }
   .contact-info {
     background-color: #666;
-
   }
+
+
+  @media (max-width:688px){
+    .nav-right .icon{
+        display: block;
+    }
+    .nav-items ul {
+        display: block;
+    }
+    .nav-items{
+        position: absolute;
+        top: 50px;
+        width: 40%;
+        /* background-color: black; */
+        display: none;
+    }
+    .nav-items ul li a{
+        display: block;
+        margin-bottom: 10px;
+        color: white;
+        text-align: center;
+        border: 2px solid red;
+    }
+    .nav-items.active{
+        display: block;
+    }
+}
