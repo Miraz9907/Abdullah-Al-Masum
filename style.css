@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background-color: rgb(15, 23, 41, 1);
 }
+
 .navbar{
     padding: 4px 30px;
     display: flex;
@@ -12,7 +13,7 @@
     top: 0;
     align-items: center;
     justify-content: space-between;
-    
+    background-color: rgb(15, 23, 41, 1);
 }
 .logo{
     color: white;
@@ -47,13 +48,14 @@
   color: white;
 }
 .logo h1{
-  background: -webkit-linear-gradient(#eee,#333);
+  background: -webkit-linear-gradient(#eeeeee,#c41a1a);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .banner{
     height: 100vh;
     padding: 30px;
+    background-color: rgb(15, 25, 41, 1);
 }
 
 .banner-img{
@@ -109,8 +111,9 @@ h2{
   border: none;
 }
 .about-me{
-  margin: 30px;
-  padding: 0 30px;
+  /* margin: 30px; */
+  padding: 30px 30px;
+  background-color: rgb(18, 23, 41, 1);
 }
 .about-me h2{
   margin-bottom: 30px;
@@ -264,6 +267,8 @@ h2{
   /* contact */
 
   .contact {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -303,10 +308,7 @@ h2{
     cursor: pointer;
   }
 
-  .contact{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
+  
 .contact-para{
   text-align: center;
   color: white;
@@ -364,5 +366,21 @@ h2{
     }
     .about-details{
       grid-template-columns: repeat(1, 1fr);
+    }
+    .my-skills{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .service{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .project{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .contact{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .contact .contact-information{
+      width: 100%;
     }
 }
