@@ -46,17 +46,29 @@
   font-weight: 700;
   color: white;
 }
-
+.logo h1{
+  background: -webkit-linear-gradient(#eee,#333);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .banner{
-    
     height: 100vh;
     padding: 30px;
 }
+
 .banner-img{
-    display: block;
-    margin:auto;
-    height: 300px;
-    width: 300px;
+  display: block;
+  margin:auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background:linear-gradient(yellow, orange,pink, purple,blue);
+  padding: 5px;
+}
+.banner-img img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 50%;
 }
 
@@ -96,13 +108,26 @@ h2{
   color: black;
   border: none;
 }
-.about{
+.about-me{
   margin: 30px;
   padding: 0 30px;
 }
-.about h2{
+.about-me h2{
   margin-bottom: 30px;
 }
+
+.about-details{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.about-details img{
+  width: 100%;
+}
+
+
 /* .my-skills{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -170,7 +195,6 @@ h2{
 
 .left-side img{
   width: 400px;
-
 }
 .right-side{
     /* border: 2px solid red; */
@@ -337,5 +361,8 @@ h2{
     }
     .nav-items.active{
         display: block;
+    }
+    .about-details{
+      grid-template-columns: repeat(1, 1fr);
     }
 }
