@@ -18,6 +18,11 @@
 .logo{
     color: white;
 }
+.logo h1{
+  background: -webkit-linear-gradient(#eeeeee,#c41a1a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .nav-items ul{
   display: flex;
   gap: 25px;
@@ -47,11 +52,7 @@
   font-weight: 700;
   color: white;
 }
-.logo h1{
-  background: -webkit-linear-gradient(#eeeeee,#c41a1a);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 .banner{
     height: 100vh;
     padding: 30px;
@@ -146,6 +147,13 @@ h2{
 .frontend{
   display: flex;
   flex-direction: column;
+}
+.frontend .title{
+  color: white;
+  background: -webkit-linear-gradient(#eeeeee,#c41a1a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 .my-skills{
   display: flex;
@@ -373,6 +381,9 @@ h2{
     }
     .service{
       grid-template-columns: repeat(1, 1fr);
+    }
+    .left-side img{
+      width: 100%;
     }
     .project{
       grid-template-columns: repeat(1, 1fr);
